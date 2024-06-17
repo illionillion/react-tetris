@@ -1,0 +1,26 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(20, 20px);
+  grid-template-columns: repeat(10, 20px);
+  gap: 1px;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+}
+
+.cell.filled {
+  background-color: blue;
+}
