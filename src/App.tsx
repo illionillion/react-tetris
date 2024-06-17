@@ -79,11 +79,11 @@ const App: FC = () => {
   useEffect(() => {
     if (gameOver) return;
 
-    const interval = setInterval(() => {
+    const timeout = setTimeout(() => {
       moveDown();
     }, 300);
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(timeout);
   }, [position, currentShape, gameOver]);
 
   const isValidMove = (shape: number[][], pos: { x: number, y: number }): boolean => {
