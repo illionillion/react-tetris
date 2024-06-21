@@ -4,7 +4,7 @@ import './App.css';
 
 const ROWS = 20;
 const COLS = 10;
-const EMPTY_BOARD = Array.from({ length: ROWS }, () => Array(COLS).fill(0));
+const EMPTY_BOARD: number[][] = Array.from({ length: ROWS }, () => Array(COLS).fill(0));
 
 const SHAPES = [
   // I shape
